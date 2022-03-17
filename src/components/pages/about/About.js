@@ -23,7 +23,7 @@ export default function About() {
           <div className="row mt">
             <div className="col xl6 l6 m6 s12">
               <p>
-                <strong>Location:</strong>East London, South Africa
+                <strong>Location:</strong> East London, South Africa
               </p>
               <p>
                 <strong>Email:</strong> tyronanderson05@gmail.com

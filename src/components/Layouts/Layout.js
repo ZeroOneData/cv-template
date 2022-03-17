@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { useHistory } from 'react-router';
 import Home from '../pages/Home';
+import CV from '../../images/CV-Tyron Anderson.pdf'
 
 export default function Layout(props) {
         const history= useHistory()
@@ -17,6 +18,9 @@ export default function Layout(props) {
 						<div className='nav-wrapper'>
 							<Link to='/' className='brand-logo'>
 								{props.heading}
+							</Link>
+							<Link to={CV} target="_blank" className='brand-logo' class="right waves-effect waves-light btn"  style={{marginTop:13, marginLeft:50}} download>
+								DOWNLOAD CV
 							</Link>
 							<ul className='right hide-on-med-and-down'>
 								<li>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 //import 'materialize-css/dist/css/materialize.min.css';
 import { HashLink as Link } from 'react-router-hash-link';
+import CV from '../../images/CV-Tyron Anderson.pdf'
 
 export default class Navbar extends Component {
 	render() {
@@ -9,9 +10,14 @@ export default class Navbar extends Component {
 				<nav className='light-blue darken-4'>
 					<div className='container'>
 						<div className='nav-wrapper'>
-							<Link to='/' className='brand-logo'>
+							<Link to='/' className='brand-logo' >
 								Portfolio
 							</Link>
+							<Link to={CV} target="_blank" className='brand-logo' class="right waves-effect waves-light btn"  style={{marginTop:13, marginLeft:50}} download>
+								DOWNLOAD CV
+							</Link>
+							
+							{/* <Link to={CV} target="_blank" type='button' download>Downloadghjkhgfjhgfdfghjh</Link> */}
 							<Link to='/' data-target='side-nav' className='sidenav-trigger'>
 								<i className='material-icons'>menu</i>
 							</Link>
@@ -44,6 +50,7 @@ export default class Navbar extends Component {
 							</ul>
 						</div>
 					</div>
+					
 				</nav>
 				<ul className='sidenav' id='side-nav'>
 					<li>
