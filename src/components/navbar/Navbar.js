@@ -47,27 +47,27 @@ export default class Navbar extends Component {
 				</nav>
 				<ul className='sidenav' id='side-nav'>
 					<li>
-						<Link to='/'>
+						<Link to='/' className="sidenav-close">
 							<i class='fas fa-home'></i> Home
 						</Link>
 					</li>
 					<li>
-						<Link to='/skills'>
+						<Link to='/skills' className="sidenav-close">
 							<i class='fas fa-copy'></i> Skills
 						</Link>
 					</li>
 					<li>
-						<Link to='/experiences'>
+						<Link to='/experiences' className="sidenav-close">
 							<i class='fas fa-id-badge'></i> Experience
 						</Link>
 					</li>
 					<li>
-						<Link to='/educations'>
+						<Link to='/educations' className="sidenav-close">
 							<i class='fas fa-graduation-cap'></i> Education
 						</Link>
 					</li>
 					<li>
-						<Link to='/portfolios'>
+						<Link to='/portfolios' className="sidenav-close">
 							<i class='fas fa-address-card'></i> Portfolio
 						</Link>
 					</li>
