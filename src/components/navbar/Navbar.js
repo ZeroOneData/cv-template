@@ -10,7 +10,7 @@ export default class Navbar extends Component {
 					<div className='container'>
 						<div className='nav-wrapper'>
 							<Link to='/' className='brand-logo'>
-								SOFTWARE ENGINEER
+								Portfolio
 							</Link>
 							<Link to='/' data-target='side-nav' className='sidenav-trigger'>
 								<i className='material-icons'>menu</i>
