@@ -6,13 +6,11 @@ import Home from './components/pages/Home';
 import Skills from './components/pages/skills/Skills';
 import Experiences from './components/pages/experiences/Experiences';
 import Educations from './components/pages/educations/Educations';
-import Portfolios from './components/pages/portfolios/Portfolios';
+// import Portfolios from './components/pages/portfolios/Portfolios';
 import './App.css';
 import Layout from './components/Layouts/Layout';
 import Details from './components/pages/details/Details';
 import Milestone from './components/pages/milestone/Milestone';
-import ProjectReveal from './components/pages/project_reveal/ProjectReveal';
-import ProjectRevealSWapi from './components/pages/project_reveal/ProjectRevealSWapi';
 
 function App() {
 
@@ -36,11 +34,11 @@ function App() {
               <Educations />
             </Layout>
           </Route>
-          <Route path="/portfolios"  >
+          {/* <Route path="/portfolios"  >
             <Layout heading='Portfolio'>
               <Portfolios></Portfolios>
             </Layout>
-          </Route>
+          </Route> */}
           <Route path="/details"  >
             <Layout heading='University Degree'>
               <Details />
@@ -50,17 +48,7 @@ function App() {
             <Layout heading='Milestone Certification'>
               <Milestone />
             </Layout>
-            </Route>
-            <Route path="/project_reveal"  >
-              <Layout heading='Project Details'>
-                <ProjectReveal/>
-              </Layout>
-            </Route>
-            <Route path="/project_reveal_swapi"  >
-              <Layout heading='Project Details'>
-                <ProjectRevealSWapi/>
-              </Layout>
-            </Route>
+          </Route>
         </Switch>
       </>
     </Router>
